@@ -1,0 +1,13 @@
+{
+    "name": "newwebsite",
+    "version": "1.0.0",
+    "description": "CircleLoop",
+    "main": "index.js",
+    "dependencies": {
+        "ejs": "^2.5.6",
+        "express": "^4.15.2"
+    },
+    "devDependencies": {},
+    "author": "",
+    "license": "ISC"
+}
