@@ -1,15 +1,29 @@
+body {
+    margin-top: 0;
+}
+
+#index {
+    margin-top: 0;
+    background-image: url('https://img3.goodfon.com/wallpaper/big/c/3b/tekstura-poverkhnost-stena-hacker-agent-blazhkovich-kontur-4.jpg');
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .header {
     background-color: #2F4858;
+    color: #F6AE2D;
+    height: 10vh;
+    margin-top: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
-h1 {
-    color: blue;
+.titles {
+    display: inline-block;
 }
 
-h2 {
-    color: brown;
-}
-
-h3 {
-    color: orange;
+span {
+    font-size: 24px;
 }
