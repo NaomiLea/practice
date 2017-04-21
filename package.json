@@ -1,13 +1,19 @@
 {
-    "name": "newwebsite",
-    "version": "1.0.0",
-    "description": "CircleLoop",
-    "main": "index.js",
-    "dependencies": {
-        "ejs": "^2.5.6",
-        "express": "^4.15.2"
-    },
-    "devDependencies": {},
-    "author": "",
-    "license": "ISC"
+  "name": "express-partials",
+  "version": "0.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "ejs": "~0.8.5",
+    "express": "~3.5.0",
+    "express-partials": "~0.2.0",
+    "supervisor": "~0.5.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "BSD-2-Clause"
 }
