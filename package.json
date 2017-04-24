@@ -1,19 +1,31 @@
 {
-  "name": "express-partials",
-  "version": "0.0.0",
-  "description": "",
-  "main": "server.js",
-  "dependencies": {
-    "ejs": "~0.8.5",
-    "express": "~3.5.0",
-    "express-partials": "~0.2.0",
-    "supervisor": "~0.5.7"
-  },
-  "devDependencies": {},
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "\"# homepage\"",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NaomiLea/homepage.git"
   },
   "author": "",
-  "license": "BSD-2-Clause"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NaomiLea/homepage/issues"
+  },
+  "homepage": "https://github.com/NaomiLea/homepage#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.16.0",
+    "express": "^4.14.1",
+    "nodemailer": "^3.0.2",
+    "nodemailer-smtp-pool": "^2.8.2",
+    "path": "^0.12.7",
+    "transporter": "0.0.1"
+  }
 }

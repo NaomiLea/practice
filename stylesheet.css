@@ -1,0 +1,442 @@
+body {
+    background: url("sprinkles.png");
+    overflow-x: hidden;
+}
+
+.about, .portfolioTitle, .contactTitle {
+    font-family: 'Lobster', cursive;
+    color: #53131E;
+}
+
+.portfolioTitle {
+    margin-top: 70px
+}
+
+header {
+    background-color: #53131E;
+    color: #FFEFBD;
+    font-size: 24px;
+    font-family: 'Lobster', cursive;
+    position: fixed;
+    z-index: 1;
+    width: 100vw;
+}
+
+.title {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.menu {
+    display: inline-block;
+    font-size: 20px;
+    padding-top: 15px;
+}
+
+.room {
+    height: 85vh;
+    background: url("tree_bark.png");
+    margin-top: 11.2vh;
+    z-index: -1;
+}
+
+.floor {
+    background-color: #264134;
+    position: absolute;
+    bottom: 0px;
+    height: 20vh;
+    width: 100vw;
+    margin-left: -15px;
+}
+
+.window {
+    background: url("https://media.giphy.com/media/tupdaCkTRWHMk/giphy.gif");
+    background-size: 100% 100%;
+    width: 15vw;
+    height: 30vh;
+    position: absolute;
+    top: 50px;
+    left: 40px;
+    border-style: groove;
+    border-width: 10px;
+    border-color: rgb(255, 255, 255);
+}
+
+.blinds {
+    border-style: groove;
+    background-color: rgb(255, 255, 255);
+}
+
+#blinds {
+    border-style: ridge;
+    background-color: rgb(255, 255, 255);
+    margin-top: 2px;
+}
+
+#blindsString {
+    background-color: rgb(255, 255, 255);
+    width: 2px;
+    height: 30vh;
+    position: absolute;
+    right: 0;
+    top: 0;
+    -webkit-box-shadow: -1px 8px 11px 1px rgba(199, 195, 199, 1);
+    -moz-box-shadow: -1px 8px 11px 1px rgba(199, 195, 199, 1);
+    box-shadow: -1px 8px 11px 1px rgba(199, 195, 199, 1);
+}
+
+#pull {
+    font-family: 'Lobster', cursive;
+    background-color: #53131E;
+    color: #FFEFBD;
+    width: 3.5vw;
+    border-radius: 10px;
+    padding: 2px 2px 2px 2px;
+}
+
+#pullMe {
+    position: absolute;
+    bottom: -35px;
+    right: -20px;
+    cursor: pointer;
+}
+
+#blindsDown {
+    height: 0vh;
+    overflow: hidden;
+}
+
+.pulled {
+    -webkit-animation: pulling 2s infinite
+}
+
+@keyframes pulling {
+    0% {
+        height: 30vh
+    }
+    33% {
+        height: 35vh;
+    }
+    66% {
+        height: 40vh;
+    }
+    90% {
+        height: 35vh;
+    }
+    100% {
+        height: 30vh;
+    }
+}
+
+.down {
+    -webkit-animation: goingDown 2s ease-in
+}
+
+@keyframes goingDown {
+    0% {
+        height: 0vh
+    }
+    33% {
+        height: 20vh
+    }
+    66% {
+        height: 30vh
+    }
+    100% {
+        height: 40vh
+    }
+}
+
+.up {
+    -webkit-animation: goingUp 2s ease-in
+}
+
+@keyframes goingUp {
+    0% {
+        height: 30vh;
+    }
+    33% {
+        height: 20vh
+    }
+    66% {
+        height: 10vh
+    }
+    100% {
+        height: 0vh
+    }
+}
+
+#top {
+    width: 30vw;
+    height: 5vh;
+    background: url("dark_wood.png");
+    border-color: rgb(0, 0, 0);
+    border: solid;
+    position: absolute;
+    right: 10vw;
+    bottom: 30vh;
+}
+
+#legOne, #legTwo {
+    position: absolute;
+    background: url("dark_wood.png");
+    border-color: rgb(0, 0, 0);
+    border: solid;
+    width: 2vw;
+    height: 20vh;
+    bottom: 10vh;
+    z-index: 1;
+}
+
+#legOne {
+    right: 10vw;
+}
+
+#legTwo {
+    right: 38vw;
+}
+
+.screen {
+    background-color: rgb(41, 41, 41);
+    position: absolute;
+}
+
+#bottom {
+    width: 8vw;
+    height: 1vh;
+    bottom: 35vh;
+    right: 20vw;
+}
+
+#stand {
+    width: 3vw;
+    height: 5vh;
+    right: 22.5vw;
+    bottom: 36vh;
+}
+
+#screen {
+    width: 10vw;
+    height: 15vh;
+    background: url("https://media.giphy.com/media/65n8RPEa3r65q/giphy.gif");
+    background-size: 100% 100%;
+    border: solid;
+    border-width: 1vw;
+    position: absolute;
+    bottom: 41vh;
+    right: 19vw;
+    border-radius: 5px 5px 5px 5px;
+}
+
+#screen:hover {
+    background: url("https://media.giphy.com/media/3oz8xH46dD1DSx3vNK/source.gif");
+    background-size: 100% 100%;
+}
+
+#keyboard {
+    width: 10vw;
+    height: .5vh;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    bottom: 35vh;
+    right: 19vw;
+    border: solid;
+    border-width: .1vw;
+    border-color: rgb(0, 0, 0);
+}
+
+#mouse {
+    width: 1.5vw;
+    height: 1vh;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    bottom: 35vh;
+    right: 17vw;
+    border: solid;
+    border-width: .1vw;
+    border-color: rgb(0, 0, 0);
+    border-radius: 10px 10px 0 0;
+}
+
+#seat {
+    width: 8vw;
+    height: 22vh;
+    background: url("purty_wood.png");
+    z-index: 2;
+    position: absolute;
+    border-radius: 10px 10px 0 0;
+    bottom: 25vh;
+    right: 20vw;
+}
+
+#chairOne {
+    background: url("purty_wood.png");
+    width: 1.5vw;
+    height: 15vh;
+    position: absolute;
+    bottom: 10vh;
+    right: 20vw;
+    z-index: 1;
+}
+
+#chairTwo {
+    background: url("purty_wood.png");
+    width: 1.5vw;
+    height: 15vh;
+    position: absolute;
+    bottom: 10vh;
+    right: 26.5vw;
+    z-index: 1;
+}
+
+#head {
+    width: 4vw;
+    height: 5vh;
+    background: url("hair.jpg");
+    background-size: 100% 100%;
+    border-radius: 20px 20px 0 0;
+    position: absolute;
+    bottom: 46vh;
+    right: 22vw;
+}
+
+.bodyLeg {
+    width: 1.5vw;
+    height: 10vh;
+    background: url("jeans.jpg");
+    border-bottom: solid;
+    border-color: rgb(199, 39, 140);
+    border-width: 1vw;
+    border-radius: 0 0 5px 5px;
+    position: absolute;
+    bottom: 15vh;
+    z-index: 1;
+}
+
+#bodyOne {
+    right: 25vw;
+}
+
+#bodyTwo {
+    right: 22vw;
+}
+
+#arm {
+    height: 2vh;
+    width: 5vw;
+    background-color: rgb(79, 0, 89);
+    position: absolute;
+    bottom: 35vh;
+    right: 17.5vw;
+    border-right: solid;
+    border-right-width: 1vw;
+    border-color: rgb(240, 205, 204);
+    border-radius: 0 5px 3px 0
+}
+
+.glyphicon-chevron-down, .glyphicon-chevron-up {
+    font-size: 18px;
+    color: #53131E
+}
+
+.toAnimation {
+    background-color: #264134;
+    color: #FFEFBD;
+    width: 100vw;
+    height: 4vh;
+    margin-top: -5px;
+    padding-top: 2px;
+}
+
+#profileImg {
+    border-radius: 100%;
+    height: 50vh;
+    width: 25vw;
+    margin-top: 18%;
+    border: solid;
+    border-color: #264134;
+    border-width: 5px;
+}
+
+#line {
+    width: 100px;
+    height: 5px;
+    background-color: #53131E;
+    margin-bottom: 10px;
+}
+
+.seperate {
+    display: inline-block;
+}
+
+.glyphicon-heart {
+    font-size: 36px;
+    color: #53131E
+}
+
+#description {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    color: #53131E
+}
+
+#aboutPage {
+    height: 96vh;
+}
+
+#portfolioPage, {
+    height: 100vh;
+}
+
+#contactPage {
+    height: 85vh;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a, a:active, a:visited {
+    text-decoration: none;
+    cursor: pointer;
+    color: #FFEFBD;
+}
+
+a:hover, a:focus {
+    text-decoration: none;
+    color: rgb(238, 176, 182) !important;
+}
+
+.portfolioImage {
+    width: 20vw;
+    height: 30vh;
+}
+
+#row {
+    margin-bottom: 20px;
+}
+
+form {
+    width: 50%;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], textarea {
+    background: url("sprinkles.png") !important;
+    border-color: rgba(215, 215, 215, 0) rgba(227, 227, 227, 0.31) rgba(215, 215, 215, 0) rgba(227, 227, 227, 0.31) !important;
+}
+
+form label {
+    float: left;
+}
+
+#portfolioPage {
+    margin-bottom: 50px;
+}
+
+.contactTitle {
+    margin-top: 600px;
+}
+
+.btn-success {
+    margin-top: -30px;
+    margin-bottom: 0px;
+    background-color: #53131E !important;
+    font-family: 'Lobster', cursive;
+}
